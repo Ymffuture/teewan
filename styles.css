@@ -200,10 +200,11 @@ cite{
     right: 175px;
 }
 .fill{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.308),#1931586b) ,url(images/logo.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.836),#1b345c) ,url(images/logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .loader{
     display: flex;
