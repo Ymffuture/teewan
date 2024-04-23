@@ -158,3 +158,36 @@ pre{
     color: #02fa86;
     text-shadow: 1px 4px rgb(239, 239, 239);
 }
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.search-engine {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
