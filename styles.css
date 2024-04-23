@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.ol-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+.pics{
+    /* height: 500px;
+    width: 100%; */
+    border-radius: 10px;
+    filter: blur(4px);
+    filter: drop-shadow(4px);
+}
+.pics2{
+    width: 50%;
+    height: 50%;
+}
+#open{
+    background: #193158;
+}
+.n3{
+    background: #858585;
+}
