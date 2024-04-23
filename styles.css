@@ -33,3 +33,128 @@ body{
     background: #bad4f56c;
     padding: 10px;
 }
+.us{
+    background: #333D51;
+}
+.about{
+    background: rgba(111, 134, 201, 0.296);
+   
+}
+.contact{
+    background: rgba(93, 95, 95, 0.222);
+    width: 100%;
+    
+}
+.image{
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 2px 1px 2px white;
+}
+.us{
+    background: #333D51;
+}
+.top{
+    background:#02172230 ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.683),rgba(128, 128, 128, 0.255)), url(images/pexels-didsss-5407054.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f9f6f6;
+    padding: 150px;
+    overflow: hidden;
+    width: 100%;
+}
+@media (max-width:920px) {
+    .top{
+        padding: 0;
+    }
+}
+.ico-dm{
+    padding: 10px;
+
+    color: #0C6FFB;
+}
+.ft{
+    background:#333D51;
+    color: #b4b4b4;
+}
+.fa-twitter{
+    color: #3c8dff;
+}
+.fa-facebook{
+    color: royalblue;
+}
+.fa-youtube{
+    color: #fc0101;
+}
+.price{
+    /* background:#0066CC; */
+    background: #D3AC2B;
+    color: #333D51;
+}
+.w-100{
+    color: aliceblue;
+}
+.pro-free{
+    background: #b4b4b4;
+}
+ a:hover{
+    color: #FF9924;
+}
+.our{
+    background: #CBD0D8;
+}
+.lh-1{
+    color: #FF9924;
+}
+.main-xy{
+    background: #333D51;
+}
+.c1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.227),gray),url('images/pexels\ maths.jpg');
+}
+.c2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.227),gray), url('images/pexels-biology.jpg');
+}
+.c3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.227),gray), url('images/pexels-rfst.jpg');
+}
+
+   .modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+h6{
+    color: #167347;
+    font-size: 18px;
+}
+pre{
+    font-size: 40px;
+    color: #02fa86;
+    text-shadow: 1px 4px rgb(239, 239, 239);
+}
