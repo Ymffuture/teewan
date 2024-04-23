@@ -1,6 +1,6 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 1px;
 }
 .ol-logo{
     height: 50px;
@@ -22,5 +22,14 @@ body{
     background: #193158;
 }
 .n3{
-    background: #858585;
+    background:  #193158;
+    color: rgb(14, 14, 14);
+}
+.uui{
+    background: hsl(217, 88%, 90%);
+    width: 100%;
+}
+.eve{
+    background: #bad4f56c;
+    padding: 10px;
 }
