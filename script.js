@@ -91,3 +91,29 @@ function search() {
         resultsContainer.innerHTML = '<p>No results found.</p>';
     }
 }
+function Print(){
+    window.print();
+}
+
+
+
+
+var loader = document.getElementById("loader");
+  window.addEventListener("loader", function(){
+    loader.style.display = "none";
+  })
+
+
+  window.addEventListener("load", () => {
+
+    const loader = document.querySelector(".loader")
+
+ document.querySelector(".loader").classList.add("loader--hidden"); 
+ 
+ document.querySelector(".loader").addEventListener("transitionend", () => {
+  document.body.removeChild(document.querySelector(".loader"));
+  setTimeout(loader,5000);
+
+ })
+
+  })
