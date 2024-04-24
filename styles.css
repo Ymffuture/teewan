@@ -280,14 +280,3 @@ span{
 .ny{
     font-size: 12px;
 }
-
-@media print{
-    .no-print{
-        display: none;
-        background: #000000;
-    }
-
-    h1{
-        background: #00ff9d;
-    }
-}

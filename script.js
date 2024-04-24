@@ -117,3 +117,18 @@ var loader = document.getElementById("loader");
  })
 
   })
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('studentForm');
+    const submitButton = document.getElementById('submitButton');
+
+    // Event listener for all inputs
+    form.addEventListener('input', () => {
+        // Check if the form is valid
+        const isValid = form.checkValidity();
+        
+        // Enable/disable submit button based on form validity
+        submitButton.disabled = !isValid;
+    });
+});
