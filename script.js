@@ -132,3 +132,31 @@ var loader = document.getElementById("loader");
         submitButton.disabled = !isValid;
     });
 });
+// Define the correct PIN (you can change it)
+const correctPin = '1234';
+
+// Function to check the PIN and show the timetable
+function checkPin() {
+    const pinInput = document.getElementById('pinInput');
+    const pinForm = document.getElementById('pinForm');
+    const timetable = document.getElementById('timetable');
+
+    if (pinInput.value === correctPin) {
+        // Hide the PIN form and show the timetable
+        pinForm.style.display = 'none';
+        timetable.classList.remove('d-none');
+    } else {
+        alert('Incorrect PIN. Please try again.');
+    }
+}
+
+// Add event listener for PIN button
+document.getElementById('pinButton').addEventListener('click', checkPin);
+
+// Function to print the timetable
+function printTimetable() {
+    window.print();
+}
+
+
+                        
