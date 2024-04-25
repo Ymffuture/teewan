@@ -26,12 +26,11 @@ body{
     color: rgb(14, 14, 14);
 }
 .uui{
-    background: hsl(217, 88%, 90%);
+    background: hsl(160, 46%, 78%);
     width: 100%;
 }
 .eve{
-    background: #bad4f56c;
-    padding: 10px;
+    background: #ffffff3f;
 }
 .us{
     background: #333D51;
@@ -279,4 +278,8 @@ span{
 }
 .ny{
     font-size: 12px;
+}
+.mose{
+    position: sticky;
+    top: 0;
 }
