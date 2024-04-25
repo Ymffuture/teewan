@@ -157,6 +157,34 @@ document.getElementById('pinButton').addEventListener('click', checkPin);
 function printTimetable() {
     window.print();
 }
+// Get the Back to Top button element
+const backToTopButton = document.getElementById('backToTopButton');
+
+// Function to handle scroll events
+function handleScroll() {
+    // Calculate the scroll position
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.scrollHeight;
+
+    // Show the button when the user is near the bottom of the page
+    if (scrollPosition + windowHeight >= documentHeight - 50) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+}
+
+// Function to scroll back to the top of the page
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Add event listener for scroll events
+window.addEventListener('scroll', handleScroll);
+
+// Add event listener for button clicks
+backToTopButton.addEventListener('click', scrollToTop);
 
 
                         
