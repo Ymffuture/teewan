@@ -442,14 +442,15 @@ FET phase we have all subjects, Upgrading students are also welcome.
  <!-- Modal code -->
  <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-warning">
+      <div class="modal-content bg-danger">
           <div class="modal-header">
-              <h5 class="modal-title" id="subscriptionModalLabel">Warning: Monthly Subscription</h5>
+              <h5 class="modal-title border-warning" id="subscriptionModalLabel">Warning: Monthly Subscription</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
               <p>Only <b>R99</b> per month for website maintenance.</p>
               <p>Payment method: 0634414863@TymeBank</p>
+              <a href="#" class="link-seconday" style="border: 1px solid white; padding: 6px;background: #0e1116; ">Purchase Now!</a>
               <!-- Countdown timer -->
               <p id="countdown">30</p>
           </div>
@@ -478,7 +479,7 @@ FET phase we have all subjects, Upgrading students are also welcome.
               clearInterval(intervalId);
               subscriptionModal.hide();
           }
-      }, 600); // Update every second (1000 ms)
+      }, 1000); // Update every second (1000 ms)
   }
 
   // Show the modal when the page loads after a delay
