@@ -175,6 +175,8 @@ function handleScroll() {
     }
 }
 
+    
+
 // Function to scroll back to the top of the page
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -186,5 +188,32 @@ window.addEventListener('scroll', handleScroll);
 // Add event listener for button clicks
 backToTopButton.addEventListener('click', scrollToTop);
 
+// Function to show the subscription modal
+function showSubscriptionModal() {
+    // Show the modal using Bootstrap's modal method
+    const subscriptionModal = new bootstrap.Modal(document.getElementById('subscriptionModal'));
+    subscriptionModal.show();
+
+    // Countdown timer
+    let countdown = 5;
+    const countdownElement = document.getElementById('countdown');
+
+    const intervalId = setInterval(() => {
+        countdown--;
+        countdownElement.textContent = countdown;
+
+        // Close the modal when the countdown reaches 0
+        if (countdown <= 0) {
+            clearInterval(intervalId);
+            subscriptionModal.hide();
+        }
+    }, 1000); // Update every second
+}
+
+// Show the modal when the page loads
+window.addEventListener('load', () => {
+    // Wait a few seconds before showing the modal
+    setTimeout(showSubscriptionModal, 0); // You can delay the modal appearance if desired
+});
 
                         
