@@ -280,6 +280,11 @@
       signatureCanvas.addEventListener('mouseleave', stopDrawing);
       clearSignatureButton.addEventListener('click', clearSignature);
 
+      // Add touch event listeners for mobile drawing
+      signatureCanvas.addEventListener('touchstart', startDrawing);
+        signatureCanvas.addEventListener('touchmove', draw);
+        signatureCanvas.addEventListener('touchend', stopDrawing);
+
       // Add event listeners for form validation
       form.addEventListener('input', checkFormValidity);
       termsConditions.addEventListener('change', checkFormValidity);
